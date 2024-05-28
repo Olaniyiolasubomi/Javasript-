@@ -39,3 +39,19 @@ console.log(`is 20 not equal to 20: ${age!=20}`)
 // 4. Logical (&, ||fr)
   
 // % is not percentage, but it is known as modulus
+
+// logical(&, ||)
+// AND will only be true when both are true
+// OR will be false when both are false
+var myName= 'jess';
+var myAge= 45;
+console.log("-------------- and ----------------")
+console.log(myName=='jess' && myAge==45);
+console.log(myName=='banker' && myAge==45);
+console.log(myName=='jess' && myAge==36);
+console.log(myName=='gross' && myAge==47);
+console.log("-------------- or ----------------")
+console.log(myName=='jess' || myAge==45)
+console.log(myName=='banker' || myAge==45)
+console.log(myName=='jess' || myAge==36)
+console.log(myName=='gross' || myAge==47)
