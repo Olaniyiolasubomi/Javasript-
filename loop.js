@@ -88,3 +88,34 @@ while (i>=0){
     console.log(i);
     i--
 }
+
+// DO WHILE loop syntax
+/* start;
+do{
+    output
+    increament/decreament
+}while(condition)
+*/
+
+// as you change the condition, the output also changes
+
+console.log('------DO WHILE------')
+var i=1
+do{
+    console.log(`${i}. Working`)
+    i++
+}while(i<11)    
+
+    var x=100
+    do{
+        console.log(x)
+        i++
+    }while(x<10)
+
+// the "DO" executes the console.log befor confirming the output(WHILE)
+
+/* Differences between FOR, WHILE and Do
+.FOR is used for making a finite condition
+.WHILE is used for making infinite condition
+.DO is used for completing a finite action
+*/
