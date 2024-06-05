@@ -81,3 +81,23 @@ function times(a){
     return a*3
 }
 console.log(times(7))
+
+// ANONYMOUS function
+var life=function (){
+    console.log('Wonder')
+}
+console.log(typeof(life))
+life()
+
+var food=function addValue(s, f){
+    console.log(27)
+}
+console.log(typeof(food))
+food()
+
+age=prompt('Please Enter Your Age')
+if (age <65 && age>25){
+    console.log('You are still eligible to work')
+}else if (age >=65){
+    console.log('You have reached the age range for retirement so please retire now.')
+}
