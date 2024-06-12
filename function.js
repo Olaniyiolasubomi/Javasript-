@@ -1,4 +1,4 @@
-alert
+"use strict"
 // Function is clasified into two in JavaScript:
 // Built-in e.g alert, prompt, console.log  AND
 // Custom Function 
@@ -70,12 +70,12 @@ studentData()
 // RETURN
 console.log('-----RETURN----')
 
-function addValue(a, b){
-    return a+b  
-}
-console.log(addValue(5,3))
-result = addValue(5,3)
-console.log(result+7)
+// function addValue(a, b){
+//     return a+b  
+// }
+// console.log(addValue(5,3))
+// result = addValue(5,3)
+// console.log(result+7)
 
 function times(a){
     return a*3
@@ -95,9 +95,97 @@ var food=function addValue(s, f){
 console.log(typeof(food))
 food()
 
-age=prompt('Please Enter Your Age')
-if (age <65 && age>25){
-    console.log('You are still eligible to work')
-}else if (age >=65){
-    console.log('You have reached the age range for retirement so please retire now.')
+// age=prompt('Please Enter Your Age')
+// serviceage=prompt('Please enter the amount of years you have worked')
+// if (age <65 && age>=25 && serviceage<35){
+//     console.log('You are still eligible to work')
+// }else if (age >=65 && serviceage>=35){
+//     console.log('Thank you for your addition to the organization but you are no longer needed')
+// }else if (age <65 && serviceage>=35){
+//     console.log('Thank you for your addition to the organization but you are no longer needed')
+// }else{
+//     console.log('Please refresh the page and fill in your information')
+// }
+
+// if(serviceage<35){
+//     console.log('You are still eligible to work')
+// }else if (serviceage>=35){
+//     console.log('Thank you for your addition to the organization but you are no longer needed')
+// }
+
+// var current=new Date()
+// var yearofbirth=prompt('Which year where you born');
+// var yearofemployment=prompt('Which year where you employed');
+// var serviceage=function(current, yearofemployment){
+//    return current-yearofemployment
+// }
+// var age=function(current, yearofbirth){
+//     return current-yearofbirth
+// }
+// if (age <65 && age>=25 && serviceage<35){
+//     console.log('You are still eligible to work')
+// }else if (age>=65 && serviceage>=35){
+//     console.log('Thank you for your addition to the organization but you are no longer needed')
+// }else if (age <65 && serviceage>=35){
+//     console.log('Thank you for your addition to the organization but you are no longer needed')
+// }else{
+//     console.log('Please refresh the page and fill in your information')
+// }
+
+
+
+var current=new Date()
+var yearofbirth = prompt('Which year where you born');
+var yearofemployment = prompt('Which year where you employed');
+var serviceage = function(current, yearofemployment){
+    return current-yearofemployment
+};
+var age = function(current, yearofbirth){
+    return current - yearofbirth
+};
+var currentage = age(current, yearofbirth);
+var currentserviceage = serviceage(current, yearofemployment);
+    if(currentage<65 && currentage>=25 && currentserviceage<35){
+        console.log('You are still eligible to work');
+    }else if(currentage<25 && currentserviceage<=35){
+        console.log('You are not eligible to work yet');
+    }else if(currentage<25 && currentserviceage>=35){
+        console.log('You are not eligible to work yet');
+    }else if(currentage>=65 && currentserviceage>=35){
+        console.log('Thank you for your addition to the organization but you are no longer needed');
+    }else if(currentage<65 && currentserviceage>=35){
+        console.log('Thank you for your addition to the organization but you are no longer needed');
+    }else{
+        console.log('Please refresh the page and fill in your information');
+    };
+
+
+// ARROW FUNCTION
+
+/*
+let form = function(a,a,......,an){
+    console.log
 }
+arrow function=
+let form = (a1, a2, a3, a4,........, an)=>expression
+*/
+let sum = (m,n)=>m+n
+console.log(typeof(sum))
+console.log(sum(5,2))
+
+add = function(a,b){
+    return a+b
+}
+console.log(add(5,2))
+
+let square = (x)=>x*2
+console.log(square(8)) 
+
+// let string=(y)=>y.toUpperCase();
+// console.log(string('God is good'));
+var name=prompt('What is your name?');
+var age=prompt('How old are you?');
+// let string=(a)=>prompt('What is your name?');
+// let age=(b)=>prompt('How old are you?');
+let studentinfo=(name,age)=>(`${name} is ${age} years old`);
+console.log(studentinfo(name,age));
