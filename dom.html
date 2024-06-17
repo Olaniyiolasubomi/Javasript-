@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1 id="head">Intro</h1>
-    <img src="Images/3c334578fa09fdd75b4d979c61a870ce.png" height="500" width="350" id="image">
-    <p id="body">
+    <img src="Images/luffy.png" height="500" width="350" id="image"onmouseout="anime()" onmouseover="nice()" onclick="spidey()">
+    <p id="body" onclick="change()" onmouseout="text()">
         Lorem, ipsum dolor sit amet consectetur adipisici
         ng elit. Maiores dolor cumque reiciendis iure! Si
         t magnam voluptates aliquam libero doloribus? Quo
@@ -16,16 +16,17 @@
         a eius inventore sint?
     </p>
     <form onsubmit="return submitform()">
-       <h3>Surname:</h3> <input type="text" size="50" placeholder="Please Enter your Surname" required id="Surname">
-       <h3>First Name:</h3> <input type="text" size="50" placeholder="Please Enter your First Name" required id="firstname">
+       <h3>Surname:</h3> <input type="text" size="50" placeholder="Please Enter your Surname(Name must not be less than 5 letters)" required id="Surname">
+       <h3>First Name:</h3> <input type="text" size="50" placeholder="Please Enter your First Name(Name must not be less than 5 letters)" required id="firstname">
        <h3>Email:</h3> <input type="email" size="50" placeholder="username@domain.com" required id="Email">
-       <h3>Password:</h3> <input type="password" size="50" placeholder="Please Enter a password" required id="password">
+       <h3>Password:</h3> <input type="password" size="50" placeholder="Please Enter a password (not less than 8 characters)" required id="password">
        <h3>Confirm Password:</h3> <input type="password" size="50" placeholder="Please Confirm your Password" required id="Confirm password">
        <h3 id="Gender">Gender:</h3>
        <input type="radio" name="gen" value="man">Male
        <input type="radio" name="gen" value="woman">Female
        <br><br><input type="submit" value="Proceed" >
     </form>
+    <h1 id="heading"></h1>
     <script src="dom.js"></script>
 </body>
 </html>
