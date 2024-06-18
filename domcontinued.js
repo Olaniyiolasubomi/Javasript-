@@ -22,5 +22,5 @@ function change(){
 }
 
 function text(){
-    paragraph;
+    docume;
 }
