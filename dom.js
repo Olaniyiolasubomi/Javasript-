@@ -16,7 +16,7 @@ function submitform(){
         console.log(Surname.value);    
     }
     if (Surname.value.length<5){
-        console.log('ERROR')
+        console. log('ERROR')
         Surname.style.borderColor='red';
     }else {
         Surname.style.borderColor='green';

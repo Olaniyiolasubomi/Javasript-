@@ -145,19 +145,19 @@ var age = function(current, yearofbirth){
 };
 var currentage = age(current, yearofbirth);
 var currentserviceage = serviceage(current, yearofemployment);
-    if(currentage<65 && currentage>=25 && currentserviceage<35){
-        console.log('You are still eligible to work');
-    }else if(currentage<25 && currentserviceage<=35){
-        console.log('You are not eligible to work yet');
-    }else if(currentage<25 && currentserviceage>=35){
-        console.log('You are not eligible to work yet');
-    }else if(currentage>=65 && currentserviceage>=35){
-        console.log('Thank you for your addition to the organization but you are no longer needed');
-    }else if(currentage<65 && currentserviceage>=35){
-        console.log('Thank you for your addition to the organization but you are no longer needed');
-    }else{
-        console.log('Please refresh the page and fill in your information');
-    };
+if(currentage<65 && currentage>=25 && currentserviceage<35){
+    console.log('You are still eligible to work');
+}else if(currentage<25 && currentserviceage<=35){
+    console.log('You are not eligible to work yet');
+}else if(currentage<25 && currentserviceage>=35){
+    console.log('You are not eligible to work yet');
+}else if(currentage>=65 && currentserviceage>=35){
+    console.log('Thank you for your addition to the organization but you are no longer needed');
+}else if(currentage<65 && currentserviceage>=35){
+    console.log('Thank you for your addition to the organization but you are no longer needed');
+}else{
+    console.log('Please refresh the page and fill in your information');
+};
 
 
 // ARROW FUNCTION
@@ -183,9 +183,9 @@ console.log(square(8))
 
 // let string=(y)=>y.toUpperCase();
 // console.log(string('God is good'));
-var name=prompt('What is your name?');
-var age=prompt('How old are you?');
-// let string=(a)=>prompt('What is your name?');
-// let age=(b)=>prompt('How old are you?');
-let studentinfo=(name,age)=>(`${name} is ${age} years old`);
-console.log(studentinfo(name,age));
+// var name=prompt('What is your name?');
+// var age=prompt('How old are you?');
+// // let string=(a)=>prompt('What is your name?');
+// // let age=(b)=>prompt('How old are you?');
+// let studentinfo=(name,age)=>(`${name} is ${age} years old`);
+// console.log(studentinfo(name,age));

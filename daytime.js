@@ -25,10 +25,9 @@ let onenoon=-60*60*24*1000
 var currentday=new Date(onenoon)
 console.log(currentday)
 
-
-let birthdate='2008-04-22'
-var birthday=new Date(birthdate)
-console.log(birthday)
-console.log(birthday.getFullYear())
-console.log(birthday.getMonth())
-console.log(birthday.getDate())
+let birthdate='2008-04-22';
+var birthday=new Date(birthdate);
+console.log(birthday);
+console.log(birthday.getFullYear());
+console.log(birthday.getMonth());
+console.log(birthday.getDate());
