@@ -1,6 +1,7 @@
 "Use Strict"
 var current=new Date()
 console.log(current)
+console.log(current.getDate())
 /*the above is used for checking the current time and date.
 the time in computer started in the year 1970.
 */
